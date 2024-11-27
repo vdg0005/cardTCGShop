@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon TCG Shop</title> <link rel="stylesheet" href="css/style.css"> <link rel="stylesheet" href="js/detalles.js">
+</head>
+<body class="imagenfondo">
+    <section class="encabezado">
+        <div>
+            <img class="logo" src="imagenes/Logo TCG Shop.png" alt="Logo de Pokemon TCG Shop">
+        </div>
+        <div>
+            <h1 class="principal">Pokemon TCG Shop</h1>
+        </div>
+        <div id="registro">
+            <nav>
+                <ul>
+                    <li><a href="registro.html">Registrarse</a></li>
+                    <li><a href="iniciodesesion.html">Iniciar sesion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="navegador">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="game.html">Juego</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="cuerpo">
+        <div>
+            <section class="cards">
+                <a href="detalles.html?pokemon=charizard"><div class="card charizard animated"></div></a>
+                <a href="detalles.html?pokemon=pikachu"><div class="card pika animated"></div></a>
+                <a href="detalles.html?pokemon=eevee"><div class="card eevee animated"></div></a>
+                <a href="detalles.html?pokemon=mewtwo"><div class="card mewtwo animated"></div></a>
+            </section>
+            <section class="cards">
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+            </section>
+            <section class="cards">
+                <a href="detalles.html?pokemon=lycanroc"><div class="card lycanroc animated"></div></a>
+                <a href="detalles.html?pokemon=miraidon"><div class="card miraidon animated"></div></a>
+                <a href="detalles.html?pokemon=okidogi"><div class="card okidogi animated"></div></a>
+                <a href="detalles.html?pokemon=thundurus"><div class="card thundurus animated"></div></a>
+            </section>
+            <section class="cards">
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+            </section>
+            <section class="cards">
+                <a href="detalles.html?pokemon=tornadus"><div class="card tornadus animated"></div></a>
+                <a href="detalles.html?pokemon=landorus"><div class="card landorus animated"></div></a>
+                <a href="detalles.html?pokemon=reshiram"><div class="card reshiram animated"></div></a>
+                <a href="detalles.html?pokemon=zekrom"><div class="card zekrom animated"></div></a>
+            </section>
+            <section class="cards">
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+                <div><button class="compra" onclick="compra()">Comprar</button></div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <h2>Conocenos mas en nuestras redes sociales:</h2>
+        <div class="redes">
+            <a href="https://www.facebook.com/?locale=es_ES"><img width="45px" class="logos_redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1024px-2021_Facebook_icon.svg.png" alt="Tu navegador no soporta esta imagen"></a>
+            <a href="https://x.com/i/flow/login"><img width="50px" class="logos_redes" src="https://images.freeimages.com/image/large-previews/f35/x-twitter-logo-on-black-circle-5694247.png" alt="Tu navegador no soporta esta imagen"></a>
+            <a href="https://www.instagram.com/accounts/login/"><img width="45px" class="logos_redes" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Tu navegador no soporta esta imagen"></a>
+        </div>
+        <div class="terminos">
+            <a target="_blank" href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal"><p>Terminos de privacidad</p></a>
+        </div>
+    </footer>
+    <script>
+        function compra() {
+        location='pago.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+/*Estilos de todas las cartas y el apartado de compra*/
+
+:root {
+    --color1: rgb(0, 231, 255);
+    --color2: rgb(255, 0, 231);
+    --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+    --charizard1: #fac;
+    --charizard2: #ddccaa;
+    --charizardfront: url(../imagenes/charizardex.png);
+    --pika1: #54a29e;
+    --pika2: #a79d66;
+    --pikafront: url(../imagenes/pikachuex.png);
+    --eevee1: #efb2fb;
+    --eevee2: #acc6f8;
+    --eeveefront: url(../imagenes/eeveegx.png);
+    --mewtwo1: #efb2fb;
+    --mewtwo2: #acc6f8;
+    --mewtwofront: url(../imagenes/mewtwogx.png);
+    --lycanroc1: #efb2fb;
+    --lycanroc2: #acc6f8;
+    --lycanrocfront: url(../imagenes/lycanrocgx.png);
+    --miraidon1: #efb2fb;
+    --miraidon2: #acc6f8;
+    --miraidonfront: url(../imagenes/miraidonex.png);
+    --okidogi1: #efb2fb;
+    --okidogi2: #acc6f8;
+    --okidogifront: url(../imagenes/okidogi.png);
+    --thundurus1: #efb2fb;
+    --thundurus2: #acc6f8;
+    --thundurusfront: url(../imagenes/thundurusgx.png);
+    --tornadus1: #efb2fb;
+    --tornadus2: #acc6f8;
+    --tornadusfront: url(../imagenes/tornadusgx.png);
+    --landorus1: #efb2fb;
+    --landorus2: #acc6f8;
+    --landorusfront: url(../imagenes/landorusex.png);
+    --reshiram1: #efb2fb;
+    --reshiram2: #acc6f8;
+    --reshiramfront: url(../imagenes/reshiramgx.png);
+    --zekrom1: #efb2fb;
+    --zekrom2: #acc6f8;
+    --zekromfront: url(../imagenes/zekromgx.png);
+  }
+    
+    
+    
+  .card {
+    width: 71.5vw;
+    height: 100vw;
+    width: clamp(200px, 61vh, 18vw);
+    height: clamp(280px, 85vh, 25.2vw);
+    @media screen and (min-width: 600px) {
+      width: 61vh;
+      height: 85vh;
+      max-width: 500px;
+      max-height: 700px;
+      width: clamp(12.9vw, 61vh, 18vw);
+      height: clamp(18vw, 85vh, 25.2vw);
+    }
+      
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    overflow: hidden;
+    z-index: 10;
+    touch-action: none; 
+    border-radius: 5% / 3.5%;
+    box-shadow: 
+      -5px -5px 5px -5px var(--color1), 
+      5px 5px 5px -5px var(--color2), 
+      -7px -7px 10px -5px transparent, 
+      7px 7px 10px -5px transparent, 
+      0 0 5px 0px rgba(255,255,255,0),
+      0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    will-change: transform, filter;
+    background-color: #040712;
+    background-image: var(--front);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform-origin: center;  
+  }
+    
+  .card:hover {
+    box-shadow: 
+      -20px -20px 30px -25px var(--color1), 
+      20px 20px 30px -25px var(--color2), 
+      -7px -7px 10px -5px var(--color1), 
+      7px 7px 10px -5px var(--color2), 
+      0 0 13px 4px rgba(255,255,255,0.3),
+      0 55px 35px -20px rgba(0, 0, 0, 0.5);
+      transform: scale(1.1);
+  }
+    
+  .card.charizard {
+    --color1: var(--charizard1);
+    --color2: var(--charizard2);
+    --front: var(--charizardfront);
+  }
+  .card.pika {
+    --color1: var(--pika1);
+    --color2: var(--pika2);
+    --front: var(--pikafront);
+  }
+  .card.mewtwo {
+    --color1: var(--mewtwo1);
+    --color2: var(--mewtwo2);
+    --front: var(--mewtwofront);
+  }
+  .card.eevee {
+    --color1: #ec9bb6;
+    --color2: #ccac6f;
+    --color3: #69e4a5;
+    --color4: #8ec5d6;
+    --color5: #b98cce;
+    --front: var(--eeveefront);
+  }
+  .card.lycanroc {
+    --color1: var(--lycanroc1);
+    --color2: var(--lycanroc2);
+    --front: var(--lycanrocfront);
+  }
+  .card.miraidon {
+    --color1: var(--miraidon1);
+    --color2: var(--miraidon2);
+    --front: var(--miraidonfront);
+  }
+  .card.okidogi {
+    --color1: var(--okidogi1);
+    --color2: var(--okidogi2);
+    --front: var(--okidogifront);
+  }
+  .card.thundurus {
+    --color1: var(--thundurus1);
+    --color2: var(--thundurus2);
+    --front: var(--thundurusfront);
+  }
+  .card.tornadus {
+    --color1: var(--tornadus1);
+    --color2: var(--tornadus2);
+    --front: var(--tornadusfront);
+  }
+  .card.landorus {
+    --color1: var(--landorus1);
+    --color2: var(--landorus2);
+    --front: var(--landorusfront);
+  }
+  .card.reshiram {
+    --color1: var(--reshiram1);
+    --color2: var(--reshiram2);
+    --front: var(--reshiramfront);
+  }
+  .card.zekrom {
+    --color1: var(--zekrom1);
+    --color2: var(--zekrom2);
+    --front: var(--zekromfront);
+  }
+  
+  .card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    opacity: .5;
+    mix-blend-mode: color-dodge;
+    transition: all .33s ease;
+  }
+  
+    
+  .card:after {
+    opacity: 1;
+    background-image: url("https://assets.codepen.io/13471/sparkles.gif"), 
+      url(https://assets.codepen.io/13471/holo.png), 
+      linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+    background-position: 50% 50%;
+    background-size: 160%;
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+    transition: all .33s ease;
+    mix-blend-mode: color-dodge;
+    opacity: .75;
+  }
+  
+  .cards { 
+    display: grid;
+    grid-template-columns: auto  auto auto auto;
+    text-align: center;
+    perspective: 2000px;
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0.1px, 0.1px, 0.1px )
+  }
+  .demo {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  
+  
+  /*Estilo de la pagina web*/
+    
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    transform: translate3d(0,0,0.1px);
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    background-image: url(../imagenes/pokemon2.jpg);
+    background-repeat: repeat-y;
+    color: white;
+  }
+  
+  input, button{
+    background: inherit;
+    border: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    color: white;
+  }
+  
+  h1{
+    font-size:xx-large;
+    margin-left: 240px;
+  }
+  
+  /*Estilo de nav*/
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  li:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+  li{
+    margin: 15px;
+    font-size: larger;
+  }
+  
+  
+  /*Estilos de ID's y Class*/
+  
+  .principal{
+    color: white;
+  }
+  
+  .encabezado{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 30px;
+  }
+  
+  .botones{
+    border: none;
+    border-radius: 5px;
+  }
+  
+  
+  .logo{
+    width: 100px;
+  }
+  
+  .sumar{
+    font-size:medium;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+  }
+  
+  #cabeza{
+    display: grid;
+    grid-template-columns: 5% 95%;
+  }
+  
+  #cuerpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+  
+  .video{
+    position: fixed;
+    background-repeat: repeat;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    visibility: visible;
+    margin-top: -28px;
+  }
+  
+  
+  .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .tutos{
+    width: 600px;
+  }
+  
+  .orden{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    color: black;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow:
+     rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.12) 0px 4px 6px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px,
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .negrita{
+    color: black;
+  }
+
+  .compra{
+    width: 100px;
+    height: 40px;
+    font-size:larger;
+  }
+
+  /*Estilo de los enlaces a href*/
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+    
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+    
+  a:visited {
+    text-decoration: none;
+    color: white;
+  }
+    
+  a:focus {
+    text-decoration: none;
+    color: white;
+  }
+    
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
+    
+  a:active {
+    text-decoration: none;
+    color: white;
+  }
+
+/*Estilo del footer de las paginas*/
+
+footer{
+  background-color: black;
+  margin-top: 50px;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos_redes{
+  margin: 10px;
+}
+
+.terminos{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: -50px;
+}
+
+/*Hacer la pagina responsive*/
+
+  
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: auto auto;
+  }
+  .encabezado{
+    grid-template-columns: auto;
+  }
+}

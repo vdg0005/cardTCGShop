@@ -1,0 +1,169 @@
+  /*Estilo de la pagina web*/
+    
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: -12px;
+    z-index: 1;
+    transform: translate3d(0,0,0.1px);
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    color: black;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(9,9,9,1) 100%);
+  }
+  
+  input, button{
+    background: inherit;
+    border: 1;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    color: black;
+  }
+  
+  h1{
+    font-size:xx-large;
+    margin-left: 240px;
+  }
+  
+  /*Estilo de nav*/
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  li:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+  }
+  li{
+    margin: 15px;
+    font-size: larger;
+  }
+  
+  
+  /*Estilos de ID's y Class*/
+  
+  .encabezado{
+    width: 97%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  
+  .logo{
+    width: 100px;
+  }
+  
+  .orden{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    color: black;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow:
+     rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.12) 0px 4px 6px,
+     rgba(0, 0, 0, 0.17) 0px 12px 13px,
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .directivo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .fotos{
+    width: 300px;
+    height: auto;
+  }
+
+  /*Estilo de los enlaces a href*/
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+    
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+    
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+    
+  a:focus {
+    text-decoration: none;
+    color: black;
+  }
+    
+  a:hover {
+    text-decoration: none;
+    color: black;
+  }
+    
+  a:active {
+    text-decoration: none;
+    color: black;
+  }
+
+/*Estilo del footer de las paginas*/
+
+footer{
+  background-color: black;
+  margin-top: 50px;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos_redes{
+  margin: 10px;
+}
+
+.terminos{
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+  margin-top: -50px;
+  color: white;
+}
+
+/*Hacer responsive la pagina web*/
+
+@media screen and (max-width: 600px) {
+  .encabezado{
+    grid-template-columns: auto;
+  }
+  .directivo{
+    grid-template-columns: auto;
+  }
+}
