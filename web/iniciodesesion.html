@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title><link rel="stylesheet" href="css/forms.css"><link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+    <video src="imagenes/pokemon.mp4" class="video" autoplay="true" loop="loop"></video>
+    <h1>Inicio de sesion</h1>
+    <form>
+        <table class="formulario">
+            <tr>
+                <td><label for="nombre">Usuario o correo electronico</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="primer">Contraseña</label></td>
+                <td><input type="password" id="1apellido"></td>
+            </tr>
+        </table>
+        <input type="button" value="Iniciar sesion" onclick="mensaje()">
+    </form>
+
+    <script>
+        function mensaje() {
+        alert("Se ha iniciado sesion correctamente");
+        location='index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title><link rel="stylesheet" href="css/forms.css"><link rel="stylesheet" href="js/script.js">
+</head>
+<body>
+    <video src="imagenes/pokemon.mp4" class="video" autoplay="true" loop="loop"></video>
+    <h1 class="top">Registro</h1>
+    <form>
+        <table class="formulario">
+            <tr>
+                <td><label for="nombre">Usuario</label></td>
+                <td><input type="text" id="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="primer">Contraseña</label></td>
+                <td><input type="password" id="1apellido" required></td>
+            </tr>
+            <tr>
+                <td><label for="segundo">E-mail</label></td>
+                <td><input type="text" id="2apellido" required></td>
+            </tr>
+            <tr>
+                <td><label for="dm">Confirmar E-mail</label></td>
+                <td><input type="text" id="domicilio" required></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><input type="checkbox" required>Terminos y condiciones</td>
+            </tr>
+        </table>
+
+        <input type="button" value="Registrarse" onclick="mensaje()">
+    </form>
+
+    <script>
+        function mensaje() {
+        alert("Su usuario ha sido registrado correctamente");
+        location='index.html';
+        }
+    </script>
+</body>
+</html>
